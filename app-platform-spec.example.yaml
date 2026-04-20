@@ -1,0 +1,36 @@
+name: the-local-man
+region: fra
+static_sites:
+  - name: local-man-client
+    source_dir: client
+    github:
+      repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+      branch: main
+      deploy_on_push: true
+    build_command: npm install && npm run build
+    output_dir: dist
+    envs:
+      - key: VITE_API_BASE_URL
+        scope: BUILD_TIME
+        value: ${local-man-api.PUBLIC_URL}
+services:
+  - name: local-man-api
+    source_dir: server
+    github:
+      repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+      branch: main
+      deploy_on_push: true
+    http_port: 8080
+    instance_size_slug: basic-xxs
+    instance_count: 1
+    build_command: npm install
+    run_command: npm start
+    envs:
+      - key: NODE_ENV
+        value: production
+      - key: CLIENT_URL
+        value: https://${local-man-client.DEFAULT_DOMAIN}
+databases:
+  - name: local-man-db
+    engine: PG
+    version: "17"
