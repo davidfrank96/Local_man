@@ -477,7 +477,7 @@ export default function LocalManLandingPage() {
         </section>
 
         <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8" id="map">
-          <SectionHeader eyebrow="Map section" title="A landing page that feels like the product itself" text="Instead of a decorative hero image, this direction uses a stylized map block with location pins and contextual labels. It makes the waitlist page feel closer to a real discovery experience." center theme={theme} />
+          <SectionHeader eyebrow="Map section" title="Discover the places locals actually keep to themselves" text="Local Man helps people find hidden food spots, roadside favorites, budget meals, late-night gems, and neighborhood vendors that never make it onto the big delivery apps." center theme={theme} />
           <div className="mt-12 grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
             <div className="rounded-[2rem] p-7" style={{ background: theme.card, border: `1px solid ${theme.border}` }}>
               <div className="space-y-4">
@@ -495,12 +495,12 @@ export default function LocalManLandingPage() {
               </div>
             </div>
             <div className="rounded-[2rem] p-8" style={{ background: theme.card, border: `1px solid ${theme.border}` }}>
-              <h3 className="text-2xl font-semibold" style={{ color: theme.text }}>What this page gets right</h3>
+              <h3 className="text-2xl font-semibold" style={{ color: theme.text }}>Why Local Man matters</h3>
               <div className="mt-6 space-y-4 text-sm leading-6" style={{ color: theme.muted }}>
-                <div className="flex gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" style={{ color: theme.accent }} /> The map hero says location, food, and hidden value in one glance.</div>
-                <div className="flex gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" style={{ color: theme.accent }} /> The theme switcher gives you real visual directions instead of one locked brand mood.</div>
-                <div className="flex gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" style={{ color: theme.accent }} /> The page now works as a pitch, a waitlist page, and a rough product preview.</div>
-                <div className="flex gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" style={{ color: theme.accent }} /> Mobile layout is tightened so sections stack properly and pins do not become unusable on smaller screens.</div>
+                <div className="flex gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" style={{ color: theme.accent }} /> The best local spots are usually not on the big apps.</div>
+                <div className="flex gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" style={{ color: theme.accent }} /> Small vendors deserve visibility without expensive platform fees.</div>
+                <div className="flex gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" style={{ color: theme.accent }} /> Users get access to cheaper, better, and more authentic food options nearby.</div>
+                <div className="flex gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" style={{ color: theme.accent }} /> The platform helps hidden local businesses get discovered and grow.</div>
               </div>
             </div>
           </div>
